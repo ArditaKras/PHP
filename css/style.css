@@ -1,0 +1,1350 @@
+/* Pjesa e Body */
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	/* font: 15px/1.5 Arial, Helvetica, sans-serif; */
+	padding: 0;
+	margin: 0;
+	background-image: linear-gradient(to bottom right, white, #9CB371);
+}
+/* Pjesa e Header */
+header {
+  background-color: #9CB371;
+  border-bottom: 3px solid #FFC300;
+  min-height: 70px;
+  padding-top: 30px;
+}
+
+.header-logo {
+  float: left;
+  font-weight: bolder;
+  font-size: 30px;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  margin-left: 50px;
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+
+header li {
+  float: left;
+  padding: 0 20px 0 20px;
+  display: inline;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+header nav {
+  float: right;
+  margin-top: 5px;
+  padding-right: 50px;
+}
+
+header .highlight, header .current a{
+  color: #FFC300;
+  font-weight:bold;
+}
+
+.navbar a:hover {
+  color: #CB4335;
+  font-weight: bold;
+}
+
+header li:hover{
+  color: #CB4335;
+  font-weight: bold;
+}
+
+.klasa1, .container, .container01{
+  text-align: center;
+  float: center;
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+}
+/* Pjesa e Newsletter */
+
+#newsletter {
+  width: 100%;
+  color: white;
+  background: #9CB371;
+}
+
+#newsletter h1{
+  margin: 3.5% auto;
+  width: 30%;
+  float: left;
+}
+
+#newsletter form{
+  float:right;
+  margin: 2.5% auto;
+}
+
+#newsletter input[type="email"]{
+  font-size: 16px;
+  padding: 4px;
+  height: 40px;
+  width: 250px;
+  border: 4px solid #f5f5f5;
+  border-radius: 20px;
+  display: inline-block;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+#newsletter input[type="email"]:focus {
+  border-color: #D4AC0D;
+  width: 300px;
+}
+
+.button_1 {
+  height:38px;
+  background:#D4AC0D;
+  border-radius: 15px;
+  border:0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+/* Pjesa -Log in- */
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 2.5% 5%;
+  margin: 2.5% auto;
+  display: block;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  box-sizing: border-box;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	width: 70%;
+	border-color: #D4AC0D;
+} 
+
+b {
+  font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	text-align: left;
+}
+
+.rmm {
+	color: black;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 3% auto;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/*Pjesa -Sign Up- */
+
+.container01 input[type=text], input[type=password], input[type=email] {
+  width: 50%;
+  padding: 2.5% 5%;
+  margin: 2.5% auto;
+  display: block;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  box-sizing: border-box;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.container01 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+	width: 70%;
+	border-color: #D4AC0D;
+} 
+
+b {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	text-align: left;
+}
+
+.btn {
+  padding: 2.5% 5%;
+  margin: 2.5% auto;
+  display: block;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  box-sizing: border-box;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.btn:hover {
+	background-color: #D4AC0D;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer01 {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.container01 {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.mod {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.mod-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* Pjesa e - Intro Video - */
+
+#intro {
+  float: left;
+  width: 100%;
+  display: inline-flex;
+  border-bottom: 5px solid #FFC300;
+  border-top: 5px solid #FFC300;
+
+  margin: 10px 0;
+}
+
+#intro .intro-vid {
+  width: 60%;
+  padding: 10px;
+}
+
+.intro-vid video{
+  width: 80%;
+  padding: 5px;
+  border-right: 10px dotted #9CB371;
+}
+
+#intro .guidance {
+  width: 30%;
+}
+
+.guidance {
+  float: right;
+  text-align: center;
+  padding: 160px 50px;
+}
+
+#myBtn {
+  height: 30%;
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: #D4AC0D;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  padding: 0 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+/* Slideshow */
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 24px;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.text h1 {
+  padding-top: 200px;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Pjesa per -listen read products- */
+
+#boxes{
+	width: 100%;
+	display: list-item;
+	background-image: linear-gradient(to bottom right, #9CB371, #fff);
+}
+
+#boxes img {
+	width: 50%;
+}
+
+#boxes tr {
+  width: 100%;
+}
+
+.cell1 {
+	width: 30%;
+	border-right: 20px dotted lightblue;
+}
+
+.cell2 {
+  padding: 0 200px;
+  width: 70%;
+}
+
+#box1 {
+	float: right;
+	width: 100%;
+	text-align: center;
+	border: 1px solid lightblue;
+	background-image: linear-gradient(to bottom right, #9CB371, lightblue);
+
+}
+
+.cell1:hover {
+	opacity: 0.7;
+}
+
+.cell3 {
+  width: 70%;
+  padding: 0 250px;
+}
+
+.cell4 {
+	width: 30%;
+	border-left: 20px dotted lightblue;
+}
+
+#box2 {
+	float: right;
+	width: 100%;
+	text-align: center;
+	border: 1px solid lightblue;
+	background-image: linear-gradient(to top right, #9CB371, lightblue);
+}
+
+.cell4:hover {
+	opacity: 0.7;
+}
+
+.cell5 {
+	width: 30%;
+	border-right: 20px dotted lightblue;
+}
+
+.cell6 {
+  width: 70%;
+  padding: 0 200px;
+}
+
+#box3 {
+	float: right;
+	width: 100%;
+	text-align: center;
+	border: 1px solid lightblue;
+	background-image: linear-gradient(to bottom right, #9CB371, lightblue);
+}
+
+.cell5:hover {
+	opacity: 0.7;
+}
+
+/* Pjesa -LISTEN & WATCH- */
+
+#videos {
+  display: block;
+	margin: 1% auto;
+	width: 90%;
+	border: 10px solid #D4AC0D;
+}
+
+#videos video {
+	width: 100%;
+}
+
+#videos video h5 {
+  padding: 5px;
+}
+
+#videos td {
+	border: 2px dashed #9CB371;
+	text-align: center;
+	background-image: linear-gradient(to bottom right, #D4AC0D, #9CB371);
+}
+
+#videos td:hover {
+	opacity: 0.7;
+}
+
+
+#wallpaper img {
+  width: 50%;
+  margin: 0 300px;
+}
+
+#wallpaper1 img {
+  width: 30%;
+  margin: 0 445px;
+}
+
+
+/* Pjesa -READ- */
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 50%;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+  width: 100%;
+}
+
+.panel {
+  text-align: left;
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  border: 1px solid #4CAF50;
+  }
+
+.pika {
+	list-style-type: disc;
+}
+
+/* About */
+
+#main {
+text-align: left;
+  float: center;
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(to right bottom, #DAF7A6, #9CB371);
+}
+
+#main article, aside {
+  display: inline;
+  position: center;
+}
+
+.article {
+  padding: 5%;
+  float: left;
+	text-align: left;
+	width: 39%;
+}
+
+.sidebar {
+  padding: 2%;
+  margin-top: 5%;
+  float: left;
+	text-align: left;
+	width: 39%;
+  border: 5px dotted #9CB371;
+}
+
+/* Footer */
+
+footer {
+	padding: 10px;
+	color: white;
+	background-color: #D4AC0D;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+
+  body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  /* font: 15px/1.5 Arial, Helvetica, sans-serif; */
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(to bottom right, white, #9CB371);
+}
+
+header {
+  background-color: #9CB371;
+  border-bottom: 3px solid #FFC300;
+  min-height: 100px;
+  padding: 5px 0;
+}
+
+.header-logo {
+  width: 100%;
+  float: left;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  margin: 0;
+  border-bottom: 3px solid #FFC300;
+  padding: 5px 0;
+}
+
+header a{
+  width: 100%;
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+
+header li {
+  position: relative;
+  display: inline;
+  text-align: center; 
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  margin-left: 32px;
+  padding: 0  ;
+}
+
+header nav {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+header .highlight, header .current a{
+  color: #FFC300;
+  font-weight:bold;
+}
+
+.klasa1, .container, .container01{
+  text-align: center;
+  float: center;
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+ /* Pjesa -Subscribe- */
+
+#newsletter {
+  width: 100%;
+  color: white;
+  background: #9CB371;
+}
+
+#newsletter h1{
+  font-size: 18px;
+  margin: 3.5% auto;
+  width: 100%;
+  float: left;
+}
+
+#newsletter form{
+  float: left;
+  margin: 2.5% auto;
+}
+
+.button_1 {
+  height:38px;
+  background:#D4AC0D;
+  border-radius: 15px;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+ }
+
+#newsletter input[type="email"]{
+  font-size: 16px;
+  padding: 4px;
+  height: 40px;
+  width: 250px;
+  border: 4px solid #f5f5f5;
+  border-radius: 20px;
+  display: inline-block;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+#newsletter input[type="email"]:focus {
+  border-color: #D4AC0D;
+  width: 300px;
+}
+
+/* Pjesa -Log in- */
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 2.5% 5%;
+  margin: 2.5% auto;
+  display: block;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  box-sizing: border-box;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  width: 70%;
+  border-color: #D4AC0D;
+} 
+
+b {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: left;
+}
+
+.btn {
+  padding: 2.5% 5%;
+  margin: 2.5% auto;
+  display: block;
+  text-align: center;
+  color: white;
+  background-color: #D4AC0D;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  box-sizing: border-box;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.rmm {
+  color: black;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding: 20% 0;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 90%;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/*Pjesa -Sign Up- */
+
+.container01 input[type=text], input[type=text], input[type=text], input[type=password], input[type=password], input[type=email] {
+  width: 50%;
+  padding: 2.5% 5%;
+  margin: 2.5% auto;
+  display: block;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  box-sizing: border-box;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.container01 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  width: 70%;
+  border-color: #D4AC0D;
+} 
+
+b {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: left;
+}
+
+.btn {
+  padding: 2.5% 5%;
+  margin: 2.5% auto;
+  display: block;
+  text-align: center;
+  color: white;
+  background-color: #D4AC0D;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  box-sizing: border-box;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer01 {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container01 {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.mod {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.7);
+}
+
+.mod-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  border: 1px solid #888;
+  width: 90%;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: red;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* Pjesa e - Intro Video - */
+
+#intro {
+  float: left;
+  width: 100%;
+  display: inline-flex;
+  border-bottom: 5px solid #FFC300;
+  border-top: 5px solid #FFC300;
+  margin: 10px 0;
+}
+
+#intro .intro-vid {
+  width: 60%;
+  padding: 10px 0;
+}
+
+.intro-vid video{
+  width: 100%;
+  padding: 15px 5px;
+  border-right: 5px dotted #9CB371;
+}
+
+#intro .guidance {
+  width: 30%;
+  padding-top: 10px;
+}
+
+.guidance {
+  float: right;
+  text-align: center;
+  padding: 0 25px;
+  font-size: 12px;
+}
+
+#myBtn {
+  height: 15%;
+  position: relative;
+  bottom: 20px;
+  right: -5px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: #D4AC0D;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  padding: 0 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+/* Slideshow */
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.text h1 {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.text p {
+  padding: 0 24px;
+  margin: 0 24px;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Pjesa per -listen read products- */
+
+#boxes{
+  width: 100%;
+  padding: 0;
+  display: block;
+  background-image: linear-gradient(to bottom right, #9CB371, #fff);
+}
+
+#boxes img {
+  width: 100%;
+}
+
+#box1 {
+  float: right;
+  width: 100%;
+  text-align: center;
+  border: 1px solid lightblue;
+  background-image: linear-gradient(to bottom right, #9CB371, lightblue);
+
+}
+.cell1 {
+  width: 25%;
+  border-right: 3px dotted lightblue;
+}
+
+.cell2 {
+  padding-left: 1%;
+  padding-right: 1%
+}
+
+#box2 {
+  float: right;
+  width: 100%;
+  text-align: center;
+  border: 1px solid lightblue;
+  background-image: linear-gradient(to top right, #9CB371, lightblue);
+}
+
+.cell3 {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.cell4 {
+  width: 25%;
+  border-left: 3px dotted lightblue;
+}
+
+#box3 {
+  float: right;
+  width: 100%;
+  text-align: center;
+  border: 1px solid lightblue;
+  background-image: linear-gradient(to bottom right, #9CB371, lightblue);
+}
+
+.cell5 {
+  width: 25%;
+  border-right: 3px dotted lightblue;
+}
+
+.cell6 {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+/* Pjesa -LISTEN & WATCH- */
+
+#videos {
+  display: block;
+  margin: 1% auto;
+  width: 90%;
+  border: 5px solid #D4AC0D;
+}
+
+#videos video {
+  width: 100%;
+  top: 0;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+#videos b {
+  font-size: 10px;
+  position: relative;
+  z-index: 3;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#videos td {
+  border: 2px dashed #9CB371;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #D4AC0D, #9CB371);
+}
+
+#wallpaper img {
+  width: 50%;
+  margin: 0 100px;
+}
+
+#wallpaper1 img {
+  width: 30%;
+  margin: 0 145px;
+}
+
+/* Pjesa -READ- */
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.panel {
+  text-align: left;
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  border: 1px solid #4CAF50;
+  }
+
+.pika {
+  list-style-type: disc;
+}
+
+/* About */
+
+#main {
+  text-align: left;
+  float: center;
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(to right bottom, #DAF7A6, #9CB371);
+}
+
+#main article, aside {
+  display: block;
+  position: center;
+}
+
+.article {
+  padding: 5%;
+  float: left;
+  text-align: left;
+  width: 90%;
+}
+
+.sidebar {
+  padding: 2%;
+  margin: 2% 2%;
+  text-align: left;
+  width: 90%;
+  border: 5px dotted #9CB371;
+}
+
+/* Footer */
+
+footer {
+  padding: 10px;
+  color: white;
+  background-color: #D4AC0D;
+  text-align: center;
+}
+}
