@@ -47,9 +47,51 @@
 			font-size: 1em;
 			font-family: arial;
 		}
+		.hero-text {
+			margin-left:700px; 
+			margin-bottom:0px;
+		}
+		#weather {
+			padding:5px;
+			border-bottom:1px solid gray;
+			border-radius:5px;
+		}
+		#weather:focus{
+			outline:none;
+		}
+		#text {
+			padding:5px;
+			border-bottom:1px solid #fff;
+			border-radius:5px;
+		}
 </style>
+
 <main>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(function($){
+	$("#weather").click(function(){
+		var city = $("#text").val();
+		var key = "27c122470871f6daabe5927910f6da88";
+		$.ajax({
+			url: 'http://api.openweathermap.org/data/2.5/weather',
+			dataType: 'json',
+			type: 'GET',
+			data: {q: city, appid: key, units: 'metric'},
+
+			success: function(data){
+				var x = '';
+				$.each(data.weather, function(index, val){
+					x += '<p><b>' + data.name + "</b><img src=Images/" + val.icon + ".png></p>" + data.main.temp
+					+ '&deg;C' + ' | ' + val.main + ", " + val.description;
+				});
+				$("#show_weather").html(x);
+			}
+		});
+	});
+});
+</script>
     <div class="container">
 
         <div class="main-top">
@@ -95,11 +137,16 @@
         </div>
 
 </div></main>
-
+				
 				<!-- ===========================================this webs part====================================== -->
+  				<div class="hero-text">
+  			  	
 
-
-				<img class="fotoja1" src="Images/showcase.jpg" alt="tastiere" height="460px" width="1200px" >
+   					 <input type="text" id="text" name="text">
+   					 <button id="weather">Check Weather</button>
+  				  <div id="show_weather"></div>
+				  </div>
+				  <img class="fotoja1" src="Images/showcase.jpg" alt="tastiere" height="460px" width="1200px" >
 
 				<section class="shkrimi">
 					<h3><b>Crystalized Mind services</b></h3>
