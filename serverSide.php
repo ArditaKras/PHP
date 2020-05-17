@@ -150,7 +150,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
   try{
   if(empty($emailErr1) and empty($fjalkalimiErr1))
   {
-    $login="select * from input where email= '".$email."' and fjalkalimi = '".$fjalkalimi."'";
+    $login="select * from login where email= '".$email."' and fjalkalimi = '".$fjalkalimi."'";
 
     $result=mysqli_query($connect,$login);
 
