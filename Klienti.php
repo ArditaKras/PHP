@@ -11,6 +11,7 @@
 
 		public function __construct($emri,$mbiemri,$email,$numri)
 		{
+			
 			$this->emri = $emri;
     		$this->mbiemri = $mbiemri;
     		$this->email = $email;
