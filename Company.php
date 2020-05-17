@@ -25,7 +25,14 @@
 		</script>
 	</head>
 	<body>
-		
+
+
+
+
+
+
+<!-- ****************************************2************************************************* -->
+
 <main>
 
     <div class="container">
@@ -132,11 +139,13 @@
 					</ul>
 				</div>
 				</h2>
-			Here are 9 words in the book: FileReader.
-Total number of unique words in the book are 9.
-The most used word in the book is: 'ne'.
+			<?php
+			include ('FileReader.php');
+			$emrifile = 'FileReader.txt';
+      		$File=new FileReader( $emrifile);
+      		$File->shtoTekst("FileReader.txt","Ne jemi grupi qe ka krijuar Website per Meditation!");
+			?>
 			</main>
-<?php include('footer.php');?>
-			
+			<?php include('footer.php');?>
 			</body>
 		</html>
